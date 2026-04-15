@@ -77,4 +77,34 @@
     <div id="overlay"></div>
     <script src="js/script.js"></script>
   </body>
+  
+<body>
+  <div class="layout">
+    <canvas id="fluid-canvas"></canvas>
+
+    <aside class="sidebar">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+      <div class="coinmarketcap-currency-widget"
+        data-currencyid="1"
+        data-base="USD"
+        data-secondary=""
+        data-ticker="true"
+        data-rank="true"
+        data-marketcap="true"
+        data-volume="true"
+        data-statsticker="true"
+        data-stats="USD"></div>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+<style>
+  html, body { margin:0; height:100%; overflow:hidden; }
+  .layout { display:flex; height:100vh; width:100vw; }
+  canvas { flex:1; }
+  .sidebar { width:360px; padding:16px; background:rgba(0,0,0,0.35); overflow:auto; }
+</style>
+
 </html>
